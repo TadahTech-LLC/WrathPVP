@@ -1,0 +1,11 @@
+name: WrathKotH
+version: 1.0
+description: KotH Plugin for WrathPvP
+author: SirReason
+
+main: co.reasondev.koth.WrathKotH
+depend: [WorldEdit]
+
+commands:
+  koth:
+    description: Main plugin command

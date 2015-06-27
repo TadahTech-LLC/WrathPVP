@@ -1,0 +1,20 @@
+costs:
+  'BLAZING TOUCH': 10
+  'HASTE': 10
+  'INFUSION': 10
+  'LOCKSMITH': 10
+  'LIFESTEAL': 10
+  'PARALYZE': 10
+  'POISON': 10
+  'WITHER': 10
+  'MULTISHOT': 10
+  'NETHER SKIN': 10
+  'REPLENISH': 10
+  'VISIONARY': 10
+keys:
+- '1:75.0'
+- '2:50.0'
+- '3:15.0'
+- '4:5.0'
+- '5:2.5'
+- '6:1.0'

@@ -1,0 +1,5 @@
+name: Enchants
+main: com.tadahtech.wrathpvp.enchants.Enchants
+version: 1.0-SNAPSHOT
+commands:
+  opengui:

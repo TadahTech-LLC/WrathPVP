@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) ReasonDev 2014.
+  ~ All rights reserved.
+  ~ No part of this project or any of its contents may be reproduced, copied, modified or adapted, without the prior written consent of SirReason.
+  -->
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>co.reasondev</groupId>
+    <artifactId>WrathKotH</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>WrathKotH</name>
+    <url>http://www.wrathpvp.com/</url>
+
+    <!-- Property Configuration -->
+    <properties>
+        <!-- Which version of Bukkit to use -->
+        <bukkit.version>1.7.10-R0.1-SNAPSHOT</bukkit.version>
+        <!-- Which version of WorldEdit to use -->
+        <worldedit.version>6.0.0-SNAPSHOT</worldedit.version>
+    </properties>
+
+    <!-- Dependency Configuration -->
+    <dependencies>
+        <dependency>
+            <groupId>org.bukkit</groupId>
+            <artifactId>bukkit</artifactId>
+            <version>${bukkit.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sk89q</groupId>
+            <artifactId>worldedit</artifactId>
+            <version>${worldedit.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <!-- Repository Configuration -->
+    <repositories>
+        <repository>
+            <id>bukkit-repo</id>
+            <url>https://repo.bukkit.org/content/groups/public/</url>
+        </repository>
+        <repository>
+            <id>maven.sk89q.com</id>
+            <url>http://maven.sk89q.com/repo/</url>
+        </repository>
+    </repositories>
+
+    <!-- Build Configuration -->
+    <build>
+        <!-- Source -->
+        <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
+
+        <!-- Resources -->
+        <resources>
+            <resource>
+                <targetPath>.</targetPath>
+                <filtering>true</filtering>
+                <directory>${basedir}/src/main/resources</directory>
+                <includes>
+                    <include>plugin.yml</include>
+                    <include>config.yml</include>
+                    <include>hills.yml</include>
+                    <include>rewards.yml</include>
+                </includes>
+            </resource>
+        </resources>
+
+        <!-- Plugins -->
+        <plugins>
+            <!-- Compilation plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <!-- JAR creation plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <finalName>WrathKotH</finalName>
+                    <outputDirectory>C:\Users\Harry\Desktop\Wrath KotH\target</outputDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

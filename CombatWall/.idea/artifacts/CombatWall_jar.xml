@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CombatWall:jar">
+    <output-path>$USER_HOME$/Servers/Hub/plugins</output-path>
+    <root id="archive" name="CombatWall.jar">
+      <element id="module-output" name="CombatWall" />
+    </root>
+  </artifact>
+</component>

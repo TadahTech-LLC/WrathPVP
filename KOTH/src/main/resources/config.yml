@@ -1,0 +1,78 @@
+### WrathKotH General Plugin Configuration ###
+
+## Name of the World where all Hills are located ##
+KOTH_WORLD: koth
+## Spawn-point coordinates of the KOTH_WORLD ##
+KOTH_SPAWN: 0.0,0.0,0.0,5.0,5.0
+## Should Players who die in the KOTH_WORLD be ##
+## denied re-entry until the next Hill is activated? ##
+ENABLE_DEATH_BAN: true
+
+## Time (in seconds) before a Player can PvP after joining the KOTH_WORLD ##
+PVP_DELAY: 20
+## Time (in seconds) a Player must control a Hill before becoming King ##
+CLAIM_DELAY: 300
+## Time (in seconds) a Hill must be uncontrolled to be set inactive ##
+INACTIVE_DELAY: 500
+## Time (in seconds) before a Hill resets after being claimed by a Player ##
+RESET_DELAY: 60
+
+## Size of the Inventory opened with '/koth loot' ##
+## This value MUST be a multiple of 9 and be greater than the highest SLOT configured ##
+REWARD_MENU_SIZE: 18
+## Title of Inventory opened with '/koth loot' ##
+REWARD_MENU_TITLE: '&aAvailable Rewards:'
+
+
+### WrathKotH Private (Player) Message Configuration ###
+messages:
+
+  ## Prefix for all private messages ##
+  PREFIX: '&b[&cKotH&b]&r'
+
+  ## Sent when a Player successfully joins the KOTH_WORLD ##
+  ## Use %d for the amount of time until PvP is enabled for the Player ##
+  KOTH_JOINED: '&aWelcome to KotH! PvP is disabled for the next &e%d seconds'
+  ## Sent when a Player dies in or tries to join the KOTH_WORLD ##
+  DEATH_BANNED: '&cYou cannot enter the KotH World until the next Hill activates!'
+  ## Sent when a Player tries to open a Hill's chest but is not the Hill's King ##
+  NOT_HILL_KING: '&cThis chest can only be opened by the King of this Hill!'
+  
+  ## Sent when a Player starts claiming a Hill ##
+  ## Use %s for the display name of the Hill ##
+  ## Use %d for the amount of time it will take to claim the Hill ##
+  CLAIMING_HILL: '&aYou are now claiming %s&a! Stay on the Hill for &e%d seconds &ato become king!'
+  ## Sent when a Player stops claiming a Hill but is still online ## 
+  ## Use %s for the display name of the Hill ##
+  NOT_CLAIMING_HILL: '&cYou are no longer claiming %s'
+  ## Sent when a Player becomes King of a Hill ##
+  ## Use %s for the display name of the Hill ##
+  HILL_CLAIMED: '&aYou have successfully claimed %s&a! A reward chest has been spawned near your Location!'
+  
+### WrathKotH Public (Server) Message Configuration ###
+broadcasts:
+
+  ## Prefix for all server messages ##
+  PREFIX: '&3[&4KotH&3]&r'
+  
+  ## Sent when a Hill is activated in correlation with its start time ##
+  ## Use %s for the display name of the Hill ##
+  HILL_ACTIVE: '%s &ais now controllable! Death bans have been reset!'
+  
+  ## Sent (in intervals) when there is no one claiming a Hill ##
+  ## Use %1$s for the display name of the Hill ##
+  ## Use %2$s for the time left until the Hill is set inactive ##
+  UNCONTROLLED_HILL: '%s &ais uncontrolled &7[&b%2$s&7]'
+  ## Sent when a Hill is automatically set inactive ##
+  ## Use %s for the display name of the Hill ##
+  HILL_INACTIVE: '%s &cis no longer controllable due to inactivity'
+  
+  ## Sent (in intervals) when a Player is claiming a Hill ##
+  ## Use %1$s for the name of the Player ##
+  ## Use %2$s for the display name of the Hill ##
+  ## Use %3$s for the amount of time left until the Hill is claimed ##
+  CONTROLLED_HILL: '&e%1$s &ais in control of %2$s &7[&b%3$s&7]' 
+  ## Sent when a Player becomes King of a Hill ##
+  ## Use %1$s for the name of the Player ##
+  ## Use %2$s for the display name of the Hill ##
+  HILL_CLAIMED: '%2$s &ahas been claimed by &e%1$s'

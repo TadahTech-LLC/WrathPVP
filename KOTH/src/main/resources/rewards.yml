@@ -1,0 +1,33 @@
+### WrathKotH Reward Configuration ###
+
+## Which slot this Reward should take in the '/koth loot' menu ##
+0:
+  ## The display name of this Reward in the menu ##
+  displayName: '&bDiamond Set'
+  ## The Material to use for this Reward's menu icon ##
+  ## Material values can be found here: http://jd.bukkit.org/rb/apidocs/org/bukkit/Material.html ##
+  iconMaterial: DIAMOND_BLOCK
+  ## The data value to use in conjunction with the menu icon's Material ##
+  iconData: 0
+  ## The information (lore) for this Reward in the menu ##
+  iconLore:
+  - '&eThis Reward contains the following:'
+  - '&61 &bDiamond Block'
+  - '&61 &bDiamond Chestplate'
+  - '&61 &bDiamond Sword &6[&cSharpness II&6]'
+  - '&65 &bSpecial Diamonds'
+  ## The Enchantments to show for this Reward's icon in the menu ##
+  ## Format: 'ENCHANT/LEVEL' ##
+  ## Enchantment values can be found here: http://jd.bukkit.org/rb/apidocs/org/bukkit/enchantments/Enchantment.html ##
+  iconEnchants:
+  - DAMAGE_ALL/1
+  ## List of all the items to give with this Reward ##
+  ## Format: 'MATERIAL[:DATA] [AMOUNT] [DISPLAYNAME] [LORE,LORE...] [ENCHANT/LEVEL,ENCHANT/LEVEL...]' ## 
+  ## Use 'NONE' for DISPLAYNAME or LORE to avoid setting a custom value ##
+  ## Material values can be found here: http://jd.bukkit.org/rb/apidocs/org/bukkit/Material.html ##
+  ## Enchantment values can be found here: http://jd.bukkit.org/rb/apidocs/org/bukkit/enchantments/Enchantment.html ##
+  rewardItems:
+  - DIAMOND_BLOCK 1
+  - DIAMOND_CHESTPLATE 1 &bDiamond_Chestpiece
+  - DIAMOND_SWORD 1 NONE NONE DAMAGE_ALL/2
+  - DIAMOND 5 &bSpecial_Diamond &eThis_diamond_is_special! 

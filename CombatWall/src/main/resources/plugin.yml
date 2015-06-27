@@ -1,0 +1,3 @@
+name: CombatWall
+main: com.tadahtech.wrathpvp.wall.CombatWall
+version: 1.0-SNAPSHOT

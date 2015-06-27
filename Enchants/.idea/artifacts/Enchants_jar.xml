@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Enchants:jar">
+    <output-path>$USER_HOME$/Servers/Hub/plugins</output-path>
+    <root id="archive" name="Enchants.jar">
+      <element id="module-output" name="Enchants" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/md-5/bungeecord-chat/1.8-SNAPSHOT/bungeecord-chat-1.8-20150606.084332-80.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

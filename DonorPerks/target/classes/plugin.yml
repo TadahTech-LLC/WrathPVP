@@ -1,0 +1,6 @@
+name: DonorPerks
+main: me.calebbfmv.nations.donorperks.DonorPerks
+version: 1.0-SNAPSHOT
+commands:
+  dp:
+    aliases: [donatorperks, donperk, donatorperk]

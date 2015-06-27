@@ -1,0 +1,6 @@
+name: StatTracker
+version: 1.0-SNAPSHOT
+main: com.tadahtech.wrath.stattracker.StatTracker
+commands:
+  tc:
+    aliases: [togglecosmetics, cosmetictoggle]
