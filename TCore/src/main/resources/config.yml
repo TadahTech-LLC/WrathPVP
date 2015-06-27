@@ -1,0 +1,14 @@
+enabled:
+  tabMenu: false
+  battle: true
+  doubleJump: false
+  depthStrider: true
+  respawn: true
+  deathMessage: true
+  libsDisguise: true
+deathMessage:
+  global: true
+  pve: true
+tab:
+  header: '&eHeader Here'
+  footer: '&aFooter Here'

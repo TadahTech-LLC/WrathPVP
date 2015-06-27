@@ -1,0 +1,16 @@
+#The different tiers, Feel free to have as many as you want
+tiers:
+  #First Tier. Names or ID's are welcomed.
+  '1':
+    #The total amount of items to give
+    #For Random: RANDOM-MIN-MAX
+    amount: RANDOM-3-5
+    #The Items that will be in the chest.
+    #Format: -'ITEM_TYPE -[option]:[value]
+    #Options:
+    #-LORE:line1,line2,etc
+    #-NAME:Name
+    #-AMOUNT:amount - The amount of the item to give. For Random: RANDOM-MIN-MAX
+    #-ENCHANTS:[values] - Adding enchants in the format: NAME&LEVEL
+    items:
+    - 'APPLE -NAME:APPLEZ-AMOUNT:2-LORE:line1,line2-ENCHANTS:GLOW'

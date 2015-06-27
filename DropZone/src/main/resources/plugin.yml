@@ -1,0 +1,6 @@
+name: DropZone
+main: com.tadahtech.pub.DropZone
+version: 1.0.0-RELEASE
+commands:
+  dz:
+    aliases: [dropzone]

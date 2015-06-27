@@ -1,0 +1,33 @@
+prefix: 'DropZone'
+claimed: '$player$ claimed the fucking drop. Kill him bitches.'
+shieldsUp: 'Message here plz'
+force: '$player$ forced a drop!'
+drop:
+  #Base Message for modifying the times with
+  baseMessage: '&e&l[$prefix$] &a&lDrop commencing in $hours$ hours, and $minutes$ minutes'
+  revealMessage: '&e&lThe drop is @ $location$ and is Tier $tier$. For a list of possible drops, do /dz loot, and select Tier $tier$'
+  #The times which to announce shit.
+  #Format:
+  # - 'HOURS:MINUTES:SECONDS'
+  #############################################################################################
+  #Tags: -ANNOUNCE_LOCATION - At this time, the location will be announced.
+  #Tags: -ALL_BELOW - This will include every number after this one, I mean every, number....)
+  #############################################################################################
+  times:
+  - '5'
+  - '4'
+  - '3'
+  - '2'
+  - '1'
+  - '0:45'
+  - '0:30'
+  - '0:15'
+  - '0:10'
+  - '0:5'
+  - '0:4'
+  - '0:3'
+  - '0:2'
+  - '0:1'
+  - '0:0:30'
+  - '0:0:15'
+  - '0:0:10'
